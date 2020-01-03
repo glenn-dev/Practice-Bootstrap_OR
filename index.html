@@ -20,7 +20,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand font-weight-bold" href="#"><img src="assets/img/logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -45,7 +45,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero text-light text-right pt-5">
+  <header class="hero text-light text-right pt-5 mt-5">
     <div class="container">
 
       <h1 class="display-1 font-weight-bold py-3">Comidas del fin del mundo</h1>
@@ -58,6 +58,7 @@
     </div>
   </header>
 
+  <!-- Carousel -->
   <section class="text-center">
     <div class="container">
       <div class="row my-5">
@@ -106,47 +107,50 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- About section -->
-        <div id="acerca" class="row">
-          <div class="mx-auto">
-            <h2 class="font-weight-bold my-4 display-3">Acerca de mí</h2>
-            <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-
-        <div class="row my-4">
-          <div class="col-sm">
-            <i class="fas fa-camera fa-3x"></i>
-            <h5 class="my-3">Fotógrafa de comida</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam minus excepturi deserunt
-              veritatis. Explicabo, molestias dolor earum delectus voluptas, quos minus amet voluptatem in
-              excepturi placeat nemo non facere.</p>
-          </div>
-          <div class="col-sm">
-            <i class="fas fa-bullhorn fa-3x"></i>
-            <h5 class="my-3">Crítica culinaria</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam minus excepturi deserunt
-              veritatis. Explicabo, molestias dolor earum delectus voluptas, quos minus amet voluptatem in
-              excepturi placeat nemo non facere.</p>
-          </div>
-          <div class="col-sm">
-            <i class="far fa-map fa-3x"></i>
-            <h5 class="my-3">Bloggera de viajes</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam minus excepturi deserunt
-              veritatis. Explicabo, molestias dolor earum delectus voluptas, quos minus amet voluptatem in
-              excepturi placeat nemo non facere.</p>
-          </div>
+      <!-- About section -->
+      <div id="acerca" class="row">
+        <div class="col-sm-12 mx-auto">
+          <h2 class="font-weight-bold my-4 display-3">Acerca de mí</h2>
+          <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
+
+      <div class="row my-4">
+        <div class="col-md-4">
+          <i class="fas fa-camera fa-3x"></i>
+          <h5 class="my-3">Fotógrafa de comida</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam minus excepturi deserunt
+            veritatis. Explicabo, molestias dolor earum delectus voluptas, quos minus amet voluptatem in
+            excepturi placeat nemo non facere.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-bullhorn fa-3x"></i>
+          <h5 class="my-3">Crítica culinaria</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam minus excepturi deserunt
+            veritatis. Explicabo, molestias dolor earum delectus voluptas, quos minus amet voluptatem in
+            excepturi placeat nemo non facere.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="far fa-map fa-3x"></i>
+          <h5 class="my-3">Bloggera de viajes</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ipsam minus excepturi deserunt
+            veritatis. Explicabo, molestias dolor earum delectus voluptas, quos minus amet voluptatem in
+            excepturi placeat nemo non facere.</p>
+        </div>
+      </div>
+
   </section>
 
   <!-- My works Section -->
-  <section id="trabajos" class="text-center py-5" id="mis-trabajos-sec">
+  <section id="trabajos" class="container-fluid text-center bg-info my-5 p-5">
     <div class="container">
-      <h3 class="font-weight-bold text-light my-3">Mis trabajos</h3>
+      <h2 class="font-weight-bold text-center text-light display-3 my-4">Mis trabajos</h2>
+
       <div class="card-deck">
+
         <div class="card text-left">
           <img src="assets/img/card-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -157,6 +161,7 @@
             <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#asado">Ver más</button>
           </div>
         </div>
+
         <div class="card text-left">
           <img src="assets/img/card-2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -167,6 +172,7 @@
             <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#papas">Ver más</button>
           </div>
         </div>
+
         <div class="card text-left">
           <img src="assets/img/card-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -183,28 +189,31 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contacto" class="py-5">
+  <section id="contacto" class="container py-5">
 
     <h2 class="font-weight-bold text-center my-4 display-3">Contáctame</h2>
-    <div class="container">
-      <form>
+    <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias labore impedit cumque blanditiis ut nam optio laboriosam quos at enim voluptas minus, omnis quidem et fuga? Consectetur, facere. Sit.</p>
+    
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Nombre</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Ingresa tu nombre">
+      </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Nombre</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Nombre">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Correo electrónico</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Correo electrónico">
+          <label for="exampleInputEmail1">Correo electrónico</label>
+          <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
+            placeholder="Ingresa tu e-mail">
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Mensaje</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+          <textarea class="form-control" id="formControlTextarea1" rows="3"
             placeholder="Escribe aquí tu mensaje"></textarea>
         </div>
-        <button type="submit" class="btn btn-info">Enviar</button>
+        <div class="text-right">
+          <button type="submit" class="btn btn-info">Enviar</button>
+        </div>
       </form>
-    </div>
+  
   </section>
 
   <footer class="p-3 text-center bg-dark text-white">
